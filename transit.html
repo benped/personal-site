@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <link rel="stylesheet" href="main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pedrick().info</title>
+  </head>
+  <body>
+    <!-- <div id="app"></div>
+    <script type="module" src="/main.js"></script> -->
+    <nav class="nav-bar" >
+      <a href="/">Home</a>
+      <a href="about.html">About</a>
+    </nav>
+    <div class="grid-3-columns" >
+      <div>
+        <h2>Benjamin Pedrick</h2>
+        
+       
+        <ul class="contacts" >
+          <li><a href="https://www.linkedin.com/in/benjaminpedrick/"><img class="icon" src="./svg/linkedin.svg"/></a></li>
+          <li><a href="https://github.com/benped"><img class="icon" src="./svg/github.svg"/></a></li>
+          <a href = "mailto: benjamin.pedrick@icloud.com"><img class="icon" src="./svg/email.svg"/></a>
+          <li><a href=""></a></li>
+        </ul>
+        
+
+      </div>
+      <div>
+        <h1 id="transit-timer-solo-project">Transit Timer - Solo Project</h1>
+        <h2 id="description">Description</h2>
+        <p><em>Duration: 60 hours</em></p>
+        <p>I built this app to gain foundational knowledge using React, Redux, and Sagas with External APIs and User Authentication. It uses the Metro Transit API to get bus and train times and deliver them at scheduled times to users via SMS using the Twilio API.  </p>
+        <p>Curently Deployed Here: (<a href="https://fast-sea-09511.herokuapp.com/">https://fast-sea-09511.herokuapp.com/</a>)</p>
+        <h3 id="prerequisites">Prerequisites</h3>
+        <ul>
+        <li><a href="https://nodejs.org/en/">Node.js</a></li>
+        <li><a href="https://www.postgresql.org/">Postgresql</a></li>
+        </ul>
+        <h2 id="database-setup">Database Setup</h2>
+        <ol>
+        <li>Create a database named <code>transit_app</code></li>
+        <li>Run the queries from <code>database.sql</code> on the <code>transit_app</code> database</li>
+        </ol>
+        <h2 id="install-dependencies">Install Dependencies</h2>
+        <ol>
+        <li><code>npm install</code></li>
+        <li><code>npm run start</code></li>
+        <li><code>npm run client</code></li>
+        </ol>
+        <h2 id="usage">Usage</h2>
+        <ol>
+        <li>Register or Login to the App</li>
+        <li>Click on the blue + button to Add a route</li>
+        <li>Select your Route, Direction, and Stop</li>
+        <li>Select the time you want to be notified, and enter your phone number
+        4a. You can test your phone number and route here</li>
+        <li>Finish Adding Route</li>
+        <li>From the Home Page you can see your added Route. You can edit details from here</li>
+        </ol>
+        <h2 id="built-with">Built With</h2>
+        <ul>
+        <li>HTML5/CSS</li>
+        <li>React / Redux / Sagas</li>
+        <li>Node / Express / PostgreSQL</li>
+        <li>Passport</li>
+        <li>Material UI</li>
+        </ul>
+        <h3 id="apis">APIs</h3>
+        <ul>
+        <li><a href="https://svc.metrotransit.org/swagger/index.html">Metro Transit NexTrip</a></li>
+        <li><a href="https://www.twilio.com/">Twilio</a></li>
+        </ul>
+        <h2 id="screenshots">Screenshots</h2>
+        <div class="screenshots">
+
+            <img src="./images/HomePage.png" width="400"/> <img src="./images/AddRoute.png" width="400"/>
+            <img src="./images/AddStop.png" width="400"/> <img src="./images/EditRoute.png" width="400"/>
+        </div>
+        <h2 id="reflection">Reflection</h2>
+        <p>I worked to stretch my sql knowledge to make the simplest possible request to the database to get the most databack. Particularly proud I got the route parameters to work so that I can refresh and correctly load details. 
+        I wish I had been able to make the cards a little more dynamic, potentially a load animation and figure out how to get the images to cover the card, no matter the input size. 
+        Really enjoyed making the input form and having that appear and disappear using the FAB. </p>
+        <h2 id="roadmap">Roadmap</h2>
+        <ul>
+        <li>[ ] Build out email notification functionality</li>
+        <li>[ ] Add all stops on a route, not just key junctions</li>
+        <li>[ ] Add Google Maps API to find stops nearby</li>
+        </ul>
+        <h2 id="acknowledgement">Acknowledgement</h2>
+        <p>Thanks to <a href="www.primeacademy.io">Prime Digital Academy</a> who equipped and helped me make this application a reality.</p>
+        
+      
+      </div>
+    </div>
+    <footer>
+      <p>
+       Ben Pedrick - 2022
+      </p>
+     </footer>
+  </body>
+</html>
